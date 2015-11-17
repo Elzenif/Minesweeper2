@@ -8,16 +8,26 @@
 #ifndef ABSTRACTGRID_H
 #define	ABSTRACTGRID_H
 
+#include <vector>
+
+class AbstractCell;
+
 class AbstractGrid {
 public:
-    AbstractGrid();
     virtual ~AbstractGrid();
 
     int getNbCells();
+    virtual std::vector<AbstractCell*>* getCells() = 0;
+    
+protected:
+    AbstractGrid(int nbCells);
+
 private:
     int nbCells;
-
+    std::vector<AbstractCell*>* pCells;
+    
     void setNbCells(int nbCells);
+    void setCells();
 };
 
 #endif	/* ABSTRACTGRID_H */
