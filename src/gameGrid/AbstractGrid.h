@@ -11,10 +11,13 @@
 class AbstractGrid {
 public:
     AbstractGrid();
-    AbstractGrid(const AbstractGrid& orig);
     virtual ~AbstractGrid();
-private:
 
+    int getNbCells();
+private:
+    int nbCells;
+
+    void setNbCells(int nbCells);
 };
 
 #endif	/* ABSTRACTGRID_H */
