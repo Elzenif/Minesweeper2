@@ -16,8 +16,9 @@ class AbstractGrid {
 public:
     virtual ~AbstractGrid();
 
-    int getNbCells();
+    int getNbCells() const;
     virtual std::vector<AbstractCell*>* getCells() = 0;
+    virtual AbstractCell* getCell(int index) = 0;
     
 protected:
     AbstractGrid(int nbCells);

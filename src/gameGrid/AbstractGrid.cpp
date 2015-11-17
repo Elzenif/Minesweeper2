@@ -17,7 +17,7 @@ AbstractGrid::AbstractGrid(int nbCells) {
 AbstractGrid::~AbstractGrid() {
 }
 
-int AbstractGrid::getNbCells() {
+int AbstractGrid::getNbCells() const {
     return nbCells;
 }
 
