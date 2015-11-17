@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+/Minesweeper2/build/
+/Minesweeper2/dist/
+/build/
+/dist/
+/nbproject/
